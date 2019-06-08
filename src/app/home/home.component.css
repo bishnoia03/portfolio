@@ -33,7 +33,7 @@ ul li a{
     color: aqua;
 }
 .main{
-    background: rgb(10, 25, 47);;
+    background: rgb(10, 25, 47);
     height: 700px;
 }
 h4{
@@ -65,4 +65,22 @@ h4{
     color: aqua;
     border-color: aqua;
     margin-top: 15px;
+}
+.about{
+    background: rgb(10, 25, 47);
+    
+    height: auto;
+    padding-top: 50px;
+}
+.about p{
+    color: rgb(136, 146, 176);
+    font-family: 'Abel';
+    line-height: 29px;
+    font-size: 20px;
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

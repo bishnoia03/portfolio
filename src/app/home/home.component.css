@@ -27,6 +27,7 @@
     text-decoration: none;
     color: #fff;
     display: block;
+    -webkit-transition: ease-in-out 0.5s;
   
 }
 .nav ul li a:hover{
@@ -118,16 +119,16 @@
     font-family: 'Abel';
     line-height: 29px;
     font-size: 20px;
-    display: flex;
+   
 }
 .work a{
     text-decoration: none;
 }
-.project{
+.project , .skills{
     background-color: rgb(10, 25, 47);
-    padding-top: 50px;
+    padding-top: 100px;
 }
-.project h2{
+.project , .skills h2{
     color:#fff;
     font-weight: 100;
     line-height: 29px;
@@ -149,4 +150,75 @@
 .git a:hover{
     color:aqua !important;
 }
-
+.skills h2::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 220px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: -15px;
+    margin-left: 80px;
+}
+.skills ul li{
+    color: rgb(136, 146, 176);
+    font-family: 'Abel';
+    line-height: 29px;
+    font-size: 20px;
+    -webkit-transition: ease-in-out 0.3s;
+    
+}
+.skills ul li:hover{
+    color: aqua;
+    font-family: 'Abel';    
+    font-size: 30px;
+    }
+.mix-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+.mix-img img:hover{
+    background-color: aqua !important;
+    z-index: 1111 !important;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s !important;
+    position: relative !important;
+}
+.last{
+    background: rgb(10, 25, 47);
+    height: 700px;
+ 
+}
+.last-data{
+    padding-top: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.last-data button{  
+        color: aqua;
+        border-color: aqua;
+        margin-top: 45px;
+        font-weight: 100;
+        width: 200px;
+        height: 50px;   
+        font-family: "Courier New", Courier, monospace; 
+        
+}
+@media (max-width:500px){
+    .intro h1{
+        font-size:35px;
+    }
+    .intro h2{
+        font-size:34px;
+    }
+    .query img{
+        width:300px;
+        height:300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

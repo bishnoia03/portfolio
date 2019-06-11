@@ -1,0 +1,16 @@
+.footer{
+    background-color: rgb(2, 12, 27);
+    color:rgb(136, 146, 176);
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Abel';
+    font-weight: 300;
+    word-spacing: 8px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

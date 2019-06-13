@@ -1,5 +1,6 @@
 {
   "projects": {
-    "aman": "portfolio-ef233"
+    "aman": "portfolio-ef233",
+    "default": "portfolio-ef233"
   }
 }

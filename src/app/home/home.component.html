@@ -1,8 +1,22 @@
 <div class="nav">
-    <i id="me" class="fa fa-list" style="float:left;padding: 20px;"></i>
-    <h2 style="float:right;padding-right: 50px;">Portfolio</h2>
- </div>
-
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4 navi">
+     <ul>
+       <li><a href="">About</a></li>
+       <li><a href="">Experiance</a></li>
+       <li><a href="">Work</a></li>
+       <li><a href="">Project</a></li>
+      
+     </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div style="float:left;">
+      <i class="navbar-toggler" id="list" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="fa fa-list" style="font-size:30px;padding-top: 25px;padding-left: 30px;"></i>
+    </div>
+    <div style="float:right;padding-right:30px;padding-top: 20px;color: aqua;"><button mat-stroked-button style="border-color:aqua;font-weight:100;" onclick="window.open('../../assets/images/Resume.pdf')">Request Resume</button></div>
+  </nav>
+</div>
 <div class="main">
   <div class="container">
    <div class="intro">
@@ -102,17 +116,4 @@
    <div> <button mat-stroked-button width="200px" height="80px">Say Hello</button></div>
     </div>
   </div>
-</div>
-<!-- side nav -->
-<div class="side-nav" style="text-align:center;">
-    <div class="nav-item">
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Experiance</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Work</a></li>
-      </ul>
- <div style="text-align:center;">      <button mat-stroked-button id="show" >Close</button></div>
-    </div>
-
 </div>

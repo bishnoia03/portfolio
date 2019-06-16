@@ -113,7 +113,25 @@
       <p style="color:aqua;  font-weight:100;font-style: italic;font-family:Courier New, Courier, monospace;font-size: 20px;">What's Next?</p>
     <h1 style=" color:#fff;font-size: 70px;font-weight: 600;">Get In Touch</h1>
     <h3 style="color: rgb(136, 146, 176);">Thank You</h3>
-   <div> <button mat-stroked-button width="200px" height="80px">Say Hello</button></div>
+   <div> <button mat-stroked-button width="200px" height="80px" onclick="document.querySelector('#myModal').style.display='block'">Say Hello</button></div>
     </div>
   </div>
+</div>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.querySelector('#myModal').style.display='none'">&times;</span>
+          <div class="hello_header">
+                 <h5 style="text-align:center;">Say Hello</h5>
+          </div>
+         <form action="" class="form">
+           <mat-form-field appearance="outline"> <mat-label>Name</mat-label> <input type="text"  matInput></mat-form-field>
+           <mat-form-field appearance="outline"> <mat-label>Mobile</mat-label> <input type="number"  matInput></mat-form-field>
+            <mat-form-field appearance="outline">  <mat-label>Message</mat-label> <textarea name="" id="" cols="10" rows="10" matInput></textarea></mat-form-field>
+            <button mat-stroked-button >Send</button>
+         </form>
+       
+    </div>
+
 </div>

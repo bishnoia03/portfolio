@@ -266,3 +266,146 @@
   
    
 }
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 0px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.modal {
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    perspective: 300px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-4000px) rotateY(90deg);
+    -moz-transform: translateZ(-4000px) rotateY(90deg);
+    -ms-transform: translateZ(-4000px) rotateY(90deg);
+    transform: translateZ(-4000px) rotateY(90deg);
+    opacity: 0;
+    background-color: #fefefe;
+    margin: 15% auto;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    /* padding: 20px; */
+    border: 1px solid #888;
+    width: 40%;
+    height:70%;
+    max-height: 400px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 3px 0 #666999;
+    box-shadow: 0px 1px 3px 0 #666999;
+    -webkit-animation: slit .7s forwards ease-out;
+    -moz-animation: slit .7s forwards ease-out;
+    animation: slit .7s forwards ease-out;
+}
+
+@-webkit-keyframes slit {
+    50% {
+        -webkit-transform: translateZ(-250px) rotateY(89deg);
+        opacity: .5;
+        -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slit {
+    50% {
+        -moz-transform: translateZ(-250px) rotateY(89deg);
+        opacity: .5;
+        -moz-animation-timing-function: ease-out;
+    }
+    100% {
+        -moz-transform: translateZ(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slit {
+    50% {
+        transform: translateZ(-250px) rotateY(89deg);
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateZ(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+
+.close {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    float: right;
+    z-index:2 ;
+}
+
+.close:hover {
+    color: #FF3031;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+}
+
+input[type="checkbox"]:checked {
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+
+.hello_header{
+    padding:10px;
+    width:100%;
+    box-sizing: border-box;
+    position: sticky;
+    background: url('../../assets/images/bg.jpg')center center no-repeat;
+    position: -webkit-sticky;
+    top:0;
+    color: #fff;
+  
+}
+
+.form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    height: 40px;
+}

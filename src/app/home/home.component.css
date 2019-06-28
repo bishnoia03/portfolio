@@ -29,16 +29,36 @@
     font-size: 22px;
     padding: 10px;
     text-align: center;
+    margin: 3px;
     
 }
 
 .nav ul li a:hover{
      color: aqua;
+    
+     }
+     .nav ul li a::after{
+        content: "";
+        display: block;
+        transition: ease-in-out 0.5s;
+        width: 0px;
+        height: 2px;
+       
+        
+     }
+.nav ul li a:hover::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 70px;
+    background-color: aqua;
+    position: relative;
+   
 }
 .nav ul li a{
     text-decoration: none;
     color: #fff;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.8s;
 }
 .main{
     background: rgb(10, 25, 47);
@@ -374,6 +394,8 @@
     top: 0;
     float: right;
     z-index:2 ;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 .close:hover {
@@ -398,7 +420,7 @@ input[type="checkbox"]:checked {
     width:100%;
     box-sizing: border-box;
     position: sticky;
-    background: url('../../assets/images/bg.jpg')center center no-repeat;
+    background: rgb(102, 99, 99);
     position: -webkit-sticky;
     top:0;
     color: #fff;
@@ -413,4 +435,24 @@ input[type="checkbox"]:checked {
 textarea{
     height: 40px;
 }
+.sidebar_active{
+   left:0px !important;
+}
+   .follow{
+       position: fixed;
+       top:40%;
+       left:-400px;
+       width: 400px;
+       background:  rgb(2, 12, 27);
+       height: 400px;       
+       transition:0.9s;
+    }
+   .follow a{
+       margin: 10px;
+       font-size: 22px;
+       color: aqua;
+       display: block;
+       text-align: center;
 
+
+   }

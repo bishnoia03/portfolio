@@ -117,7 +117,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2>Skills</h2>
-        <h4 style="color:aqua;font-weight: 100;line-height: 29px;font-family: 'Abel';">Web Designing</h4>
+        <h4 style="color:aqua;font-weight: 100;line-height: 29px;font-family: 'Abel';">Web Developer</h4>
         <p style="color:rgb(136, 146, 176);line-height: 29px;font-family: 'Abel';">Responsive all screens</p>
         <ul>
           <li>HTML 5</li>
@@ -169,7 +169,7 @@
       <mat-form-field appearance="outline">
         <mat-label>Message</mat-label> <textarea name="" id="" cols="10" rows="10" matInput></textarea>
       </mat-form-field>
-      <button mat-stroked-button (click)="send()">Send</button>
+      <button type="reset" mat-stroked-button (click)="mysnackBar()" onclick="document.querySelector('#myModal').style.display='none'" >Send</button>
     </form>
 
   </div>
@@ -179,18 +179,18 @@
 <div  class="follow">
 <div class="close">
   <span class="sh">&times;</span>
+</div><br><br>
+<div class="social">
+  <ul>
+    <li><a href="https://www.facebook.com/aman.bishnoi.9803" style="color: blue"><i class="fa fa-facebook"></i>&nbsp; Facebook</a></li>
+    <li><a href="https://www.instagram.com/a_kay.bishnoi?r=nametag" style="color: #f24800"><i class="fa fa-instagram"></i>&nbsp; Instagram</a></li>
+    <li><a href="https://join.skype.com/invite/mvS3h74FCraM" style="color: #00aff0"><i class="fa fa-skype"></i>&nbsp; Skype</a></li>
+    <li><a href="#" style="color: #1da1f2"><i class="fa fa-twitter"></i>&nbsp; Twitter</a></li>
+    <li><a href="#" style="color: blue"><i class="fa fa-phone"></i>&nbsp; 8295716429</a></li>
+  </ul>
+
 </div>
- 
 
-
-  <div>
-
-  </div>
 
 </div>
-<button class="sh" style="  transform: rotate(270deg);
-height: auto;
-margin: -31px;
-position: fixed;
-top: 30%;
-color:#fff;" mat-stroked-button>Follow Me</button>
+<button class="sh" id="btn" mat-stroked-button>Follow Me</button>

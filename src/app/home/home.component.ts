@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SmsService } from '../sms.service';
+import {MatSnackBar} from '@angular/material';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,11 +8,20 @@ import { SmsService } from '../sms.service';
 })
 export class HomeComponent implements OnInit {
 post :any[];
-  constructor(private msg : SmsService) { 
+message: string;
+  action: string;
+  constructor(private msg : SmsService, private snackBar: MatSnackBar ) { 
     this.msg.geturl().subscribe(
       response => {
-        this.post = response.json();
+        this.post
       });
+     
+  }
+  mysnackBar() {
+    this.snackBar.open(this.message = 'Thanks for Feedback', this.action = '', {
+      duration: 2500 ,
+
+    });
   }
 
   ngOnInit() {
